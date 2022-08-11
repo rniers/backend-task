@@ -124,3 +124,9 @@ When you have finished the assignment, create a github repository and send us th
   
 
 Thank you and good luck! 🙏
+
+## Things to consider:
+
+- test coverage
+- moving logic out of controllers to separate layer
+- description of possible errors in documentation, unified approach to error handling
