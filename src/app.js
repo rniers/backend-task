@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const router = require('./routes');
+const errorHandler = require('./middleware/errorHandler');
 
 
 const app = express();
@@ -13,5 +14,6 @@ app.set('sequelize', sequelize);
 app.set('models', sequelize.models);
 
 app.use(router);
+app.use(errorHandler);
 
 module.exports = app;
